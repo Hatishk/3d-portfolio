@@ -47,7 +47,7 @@ const About = () => {
         variants={fadeIn("", "", 0.1, 1)}
         className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]'
       >
-        I am a skilled frontende developer with proficiency in HTML, CSS, JavaScript and I enjoy staying up-to-date with the latest frontend technologies and design trends. I am a quick learner and a team player who is always willing to collaborate and contribute to the success of a project.
+        I am a skilled frontend developer with proficiency in HTML, CSS, JavaScript and I enjoy staying up-to-date with the latest frontend technologies and design trends. I am a quick learner and a team player who is always willing to collaborate and contribute to the success of a project.
       </motion.p>
 
       <div className='mt-20 flex flex-wrap gap-10'>
