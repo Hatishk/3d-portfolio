@@ -16,16 +16,51 @@ const Contact = () => {
     message: '',
   });
   const [loading, setLoading] = useState(false);
-const handleChange = (e) => {}
+const handleChange = (e) => {
+  const {name , value} =e.target;
+  setForm({ ...form, [name]: value})
+}
 
-const handleSubmit = (e) => {}
+const handleSubmit = (e) => {
+  e.preventDefault();
+  setLoading(true);
+
+  emailjs.send(
+    'service_qokhcbi',
+    'template_p51ldyu',
+    {
+      from_name: form.name,
+      to_name: 'Hatish',
+      from_email: form.email,
+      to_email: 'himanshuasija786@gmail.com',
+      message: form.message,
+    },
+    'IOm4_2KuDuNF7ZELJ'
+  )
+  .then(() => {
+    setLoading(false);
+    alert('Thank you. I will get back to you as soon as possible.');
+
+    setForm({
+      name: '',
+      email: '',
+      message: '',
+    })
+  }, (error) => {
+    setLoading(false)
+
+    console.log(error);
+
+    alert('Something went wrong')
+  })
+}
   return (
     <div className="xl:mt-12 xl:flex-row flex-col-reverse flex gap-10 overflow-hidden">
       <motion.div variants={slideIn('left', "tween" , 0.2, 1)}
       className="flex-[0.75] bg-black-100 p-8 rounded-2xl"
       >
         <p className={styles.sectionSubText}>Get In Touch</p>
-        <h3 className={styles.sectionHeadText}>Contact Us.</h3>
+        <h3 className={styles.sectionHeadText}>Contact.</h3>
 
         <form ref={formRef}
         onSubmit={handleSubmit}
