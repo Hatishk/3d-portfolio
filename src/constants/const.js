@@ -11,10 +11,10 @@ import {
   git,
   CU,
   workshop,
-  carrent,
-  jobit,
-  tripguide,
   threejs,
+  fiver,
+  sumz,
+  fitness,
 } from "../assets";
 
 export const navLinks = [
@@ -24,7 +24,7 @@ export const navLinks = [
   },
   {
     id: "work",
-    title: "Work",
+    title: "Education",
   },
   {
     id: "contact",
@@ -99,97 +99,69 @@ const experiences = [
   }
 ];
 
-const testimonials = [
-  {
-    testimonial:
-      "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-    name: "Sara Lee",
-    designation: "CFO",
-    company: "Acme Co",
-    image: "https://randomuser.me/api/portraits/women/4.jpg",
-  },
-  {
-    testimonial:
-      "I've never met a web developer who truly cares about their clients' success like Rick does.",
-    name: "Chris Brown",
-    designation: "COO",
-    company: "DEF Corp",
-    image: "https://randomuser.me/api/portraits/men/5.jpg",
-  },
-  {
-    testimonial:
-      "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-    name: "Lisa Wang",
-    designation: "CTO",
-    company: "456 Enterprises",
-    image: "https://randomuser.me/api/portraits/women/6.jpg",
-  },
-];
-
 const projects = [
   {
-    name: "Car Rent",
+    name: "Fiverr UI Clone",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "Fiverr UI clone using React.js and SCSS. Designed using functional React components, hooks, and React Router Dom.",
     tags: [
       {
         name: "react",
         color: "blue-text-gradient",
-      },
-      {
-        name: "mongodb",
-        color: "green-text-gradient",
-      },
-      {
-        name: "tailwind",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: carrent,
-    source_code_link: "https://github.com/",
-  },
-  {
-    name: "Job IT",
-    description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
-    tags: [
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "restapi",
-        color: "green-text-gradient",
       },
       {
         name: "scss",
-        color: "pink-text-gradient",
+        color: "green-text-gradient",
       },
     ],
-    image: jobit,
-    source_code_link: "https://github.com/",
+    image: fiver,
+    source_code_link: "https://github.com/Hatishk/fiverr",
+    live: "https://stately-elf-3f4af3.netlify.app",
   },
   {
-    name: "Trip Guide",
+    name: "Sumz",
     description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+      "Simplify your reading with Summize, an open-source article summarizer that transforms lengthy articles into clear and concise summaries.",
     tags: [
       {
-        name: "nextjs",
+        name: "react",
         color: "blue-text-gradient",
       },
       {
-        name: "supabase",
+        name: "rapidAPI",
         color: "green-text-gradient",
       },
       {
-        name: "css",
+        name: "tailwindcss",
         color: "pink-text-gradient",
       },
     ],
-    image: tripguide,
-    source_code_link: "https://github.com/",
+    image: sumz,
+    source_code_link: "https://github.com/Hatishk/AI_Summerizer",
+    live: "https://stunning-pony-9208e6.netlify.app",
+  },
+  {
+    name: "Fitness App",
+    description:
+      "This is fitness exercise website in which you can find 500+ exericises of diffrent body parts.",
+    tags: [
+      {
+        name: "reactjs",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "materialUI",
+        color: "green-text-gradient",
+      },
+      {
+        name: "RapidAPI",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: fitness,
+    source_code_link: "https://github.com/Hatishk/fitness_app",
+    live: "https://comforting-sprinkles-a73db6.netlify.app",
   },
 ];
 
-export { services, technologies, experiences, testimonials, projects };
+export { services, technologies, experiences, projects };
